@@ -1,0 +1,27 @@
+@api = http://localhost:4000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/61bce5e0afd87d28bbbddfae
+
+### Create a video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=Fk5Kq-zhcJo&list=PLrAw40DbN0l1tjWT1Lg2kKxm0eHdpPrDu&index=2",
+    "title": " MongoDB video",
+    "description": "this is a  MongoDB"
+}
+
+###
+DELETE {{api}}/videos/61bce713afd87d28bbbddfb0
+
+###
+PUT {{api}}/videos/61bce5e0afd87d28bbbddfae
+Content-Type: application/json
+
+{
+    "description": "este es el video"
+}
