@@ -1,7 +1,7 @@
 @api = http://localhost:4000
 
 GET {{api}}/videos
-
+ 
 ###
 GET {{api}}/videos/61bce5e0afd87d28bbbddfae
 
